@@ -9,7 +9,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class WebConfiguartion {
 
+    //bean creation for this class
     @Bean
+    
+   
+  //Register bean to be able to access H2 database administration console//
     ServletRegistrationBean h2servletRegistration()
     {
         ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
