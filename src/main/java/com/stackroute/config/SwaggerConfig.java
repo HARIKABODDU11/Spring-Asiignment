@@ -8,10 +8,13 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 //import static jdk.internal.joptsimple.util.RegexMatcher.regex;//
-
+//configuartion annotation used to identify the class as configuartion
 @Configuration
+//enbale swagger annoatation is used to enable the swagger
 @EnableSwagger2
 public class SwaggerConfig {
+    
+    //bean creation for the class
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
